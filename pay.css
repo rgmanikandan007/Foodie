@@ -27,9 +27,11 @@ a{
 }
 .icons i{
     margin-top: 5px;
+    cursor: pointer;
 }
 .icons h4{
     margin-left: 10px;
+    cursor: pointer;
 }
 .search-icons input{
     padding: 10px 40px;
@@ -88,6 +90,22 @@ a{
 }
 /* Navbar End */
 
+/* Bredcrumbs Start */
+.bredcrumbs{
+    padding: 1rem;
+}
+.bredcrumbs-container h3 a{
+    text-decoration: none;
+    color: #111;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+.bredcrumbs hr{
+    margin-top: 10px;
+}
+/* Bredcrumbs End */
+
 
 
 /* Pay Start */
@@ -97,10 +115,10 @@ a{
 }
 .pay-container{
     background-color: #f0f0f0;
-    width: 40%;
-    /* margin-left: 27rem; */
     padding: 1rem;
     border-radius: 10px;
+    margin: auto;
+    width: 50%;
 }
 .img-head{
     display: flex;
@@ -153,9 +171,9 @@ a{
     margin-top: 10px;
     margin-right: 2rem;
 }
-/* .pay-btn{
-    margin-left: 3rem;
-} */
+.pay-btn{
+    text-align: center;
+}
 .pay-btn button{
     padding: 10px 20px;
     border-radius: 30px;
@@ -163,6 +181,7 @@ a{
     margin-top: 1rem;
     background-color: #ffae00;
     color: #fff;
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 768px) {
@@ -294,5 +313,46 @@ a{
         font-size: 0.9rem;
     }
 }
-
 /* Footer End */
+
+/* Bottom Footer Start */
+.bottomfooter{
+    padding: 2rem;
+}
+.bottomfooter-container{
+    display: flex;
+    justify-content: space-around;
+}
+.bottomfooter-container ul li{
+    list-style-type: none;
+    margin-top: 2rem;
+}
+.left-bottomfooter{
+    margin-left: 5rem;
+}
+.right-bottomfooter img{
+    width: 100%;
+    margin-top: -5rem;
+}
+@media screen and (max-width: 768px){
+    .bottomfooter-container{
+        display: block;
+        text-align: center;
+    }
+    .right-bottomfooter img{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 320px){
+    .bottomfooter-container{
+        display: block;
+        text-align: center;
+    }
+    .left-bottomfooter{
+        text-align: center;
+    }
+    .right-bottomfooter img{
+        width: 100%;
+    }
+}
+/* Bottom Footer End */
