@@ -1,0 +1,421 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Mukta";
+}
+a{
+    text-decoration: none;
+}
+
+/* Navbar Start */
+.navbar{
+    padding: 1rem;
+    box-shadow: 5px 5px 10px rgba(223, 222, 222, 0.856);
+}
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+}
+.search-icons{
+    display: flex;
+}
+.icons{
+    display: flex;
+    margin-left: 2rem;
+    margin-top: 10px;
+}
+.icons i{
+    margin-top: 5px;
+}
+.icons h4{
+    margin-left: 10px;
+}
+.search-icons input{
+    padding: 10px 40px;
+    border-radius: 30px;
+    border: 2px solid #ffd900;
+}
+.search-icons input::placeholder{
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-logo h1 {
+        font-size: 24px;
+    }
+    .search-icons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .search-icons input {
+        width: 60%;
+        margin-bottom: 10px;
+        padding: 8px;
+    }
+    .icons {
+        display: flex;
+        align-items: center;
+        margin: 5px 0;
+    }
+    .icons h4 {
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .main-logo h1 {
+        font-size: 20px;
+    }
+    .search-icons input {
+        width: 100%;
+        padding: 6px;
+    }
+    .icons {
+        margin: 3px 0;
+    }
+    .icons h4 {
+        font-size: 14px;
+    }
+}
+/* Navbar End */
+
+
+/* Banner Start */
+.banner-container img{
+    width: 100%;
+    margin-top: 1rem;
+}
+/* Banner End */
+
+
+
+
+/* Card Start */
+.card{
+    padding: 2rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.card-container {
+    position: relative;
+    width: 200px;
+    border-radius: 10px;
+}
+.discount-badge {
+    position: absolute;
+    background-color: #ffa500;
+    width: 50%; 
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 0 0 10px;
+}
+.discount-badge span {
+    font-size: 28px;
+    font-weight: 800;
+    color: white;
+    text-align: center;
+    line-height: 1.2;
+    transform: rotate(270deg);
+    font-family: "Mukta";   
+}
+.image-container {
+    text-align: center;
+    padding: 20px;
+    height: 200px;
+}
+.cardimages img{
+    width: 70%;
+    height: 150px; 
+}
+.cardimages p{
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) { 
+    .card {
+        flex-direction: row; 
+        flex-wrap: wrap;
+        justify-content: center; 
+        text-align: center;
+    }
+    .card-container, .cardimages {
+        width: 45%; 
+        margin: 10px; 
+    }
+}
+
+@media screen and (max-width: 480px) { 
+    .card {
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center;
+    }
+    .card-container, .cardimages {
+        width: 90%; 
+        margin: 10px 0; 
+    }
+    .discount-badge {
+        font-size: 14px; 
+    }
+}
+/* Card End */
+
+
+/* Benefit Start */
+.benefit{
+    padding: 2rem;
+    margin-top: 2rem;
+}
+.benefit-container{
+    display: flex;
+    justify-content: space-between;
+}
+.benefit-container img{
+    width: 32%;
+}
+@media screen and (max-width: 768px) {
+    .benefit-container{
+        display: block;
+    }
+    .benefit-container img {
+        width: 100%;
+        margin-bottom: 10px; 
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .benefit-container img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+/* Benefit End */
+
+
+/* Product Start */
+.product{
+    padding: 2rem;
+    margin-top: 2rem;
+    background-color: rgb(240, 240, 240);
+}
+.product-container{
+    display: flex;
+    justify-content: space-between;
+}
+.product-section{
+    background-color: #fff;
+    margin: 1rem;
+    border-radius: 40px;
+}
+.product-section img{
+    width: 100%;
+    border-radius: 40px 40px 0px 0px;
+}
+.product-cont{
+    padding: 20px;
+}
+.product-rate{
+    display: flex;
+    justify-content: space-between;
+}
+.product-rate button{
+    padding: 3px 14px;
+    border-radius: 30px;
+    border: none;
+    background-color: #ff9900;
+    color: #fff;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.product-cont hr{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .product-container {
+        display: block;
+    }
+    .product-section {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .product-section img {
+        width: 100%; 
+        height: auto;
+    }
+    .product-rate {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    button {
+        padding: 10px 20px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .product-section img {
+        width: 100%;
+        height: auto;
+    }
+    .product-section h4, .product-section p, .product-section h3 {
+        text-align: center; 
+    }
+    .product-rate {
+        flex-direction: column;
+        align-items: center;
+    }
+    .product-rate h3 {
+        margin-bottom: 10px;
+    }
+    button {
+        width: 100%; 
+    }
+}
+/* Product End */
+
+
+/* Fry Start */
+.fry{
+    padding: 2rem;
+    margin-top: 2rem;
+    background-color: rgb(240, 240, 240);
+}
+.fry-container{
+    display: flex;
+    justify-content: space-around;
+}
+.fry-image{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 40px;
+}
+.fry-image h3,h4{
+    text-align: center;
+}
+.fry-image img{
+    width: 100%;
+    height: 300px;
+}
+.img-icon{
+    display: flex;
+}
+.img-icon i{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .fry-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .fry-image {
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center; 
+    }
+    .img-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .fry-image img {
+        width: 100%;
+        height: auto;
+        max-width: 300px; 
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .fry-container {
+        padding: 10px; 
+    }
+    .fry-image {
+        width: 100%;
+        text-align: center;
+    }
+    .img-icon {
+        margin-bottom: 10px;
+    }
+    .fry-image img {
+        width: 100%;
+        height: auto;
+        max-width: 250px; 
+    }
+    h3, h4 {
+        text-align: center; 
+    }
+}
+/* Fry End */
+
+
+/* Footer Start */
+.footer{
+    padding: 2rem;
+    margin-top: 2rem;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-around;
+}
+.footer-container ul li{
+    list-style-type: none;
+    margin-top: 1rem;
+}
+.botom-footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;  
+    }
+    .footer-container > div {
+        width: 100%;
+        margin-bottom: 20px; 
+    }
+    .footer-container ul {
+        padding: 0;
+        list-style-type: none; 
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .footer-container {
+        padding: 10px; 
+    }
+    .footer-container > div {
+        width: 100%;
+        margin-bottom: 15px; 
+    }
+    h3 {
+        font-size: 1.2rem; 
+    }
+    ul li {
+        font-size: 0.9rem;
+    }
+}
+
+/* Footer End */
